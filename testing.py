@@ -1,17 +1,20 @@
 
-print('Enter Input 1: ')
+print('Enter Input 1 (A): ')
 A = int(input())
 
-print('Enter Input 2: ')
+print('Enter Input 2 (B): ')
 B = int(input())
 
-stat_1 = (A + B)
-stat_2 = stat_1 * B
-stat_3 = stat_2 - 5
 
-valid_opr = ['+', '-', '*']
+valid_opr = ['+', '-', '*'] 
 
- 
+for op1 in valid_opr:
+    for op2 in valid_opr:
+        for op3 in valid_opr:
 
-print(C)
+            statement = f"(({A} {op1} {B}) {op2} {B} ) {op3} 5"
+
+            result = eval(statement)
+            print(f"The following operators were used: {op1}, {op2}, {op3}: Producing: {result}")
+
 
