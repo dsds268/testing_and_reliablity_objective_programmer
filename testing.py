@@ -24,4 +24,9 @@ if AKnown and BKnown:  #Calculation with both values known
                 statement = f"(({A} {op1} {B}) {op2} {B} ) {op3} 5"
                 result = eval(statement)
                 print(f"The following operators were used: {op1}, {op2}, {op3}: Producing: {result}")
-else:
+
+elif not (AKnown) or not (BKnown):
+    print('Retriving all possible values of A so that the concrete test case can be generated')
+
+elif not (AKnown) and not (BKnown):
+    print('You must have at least one value known to proceed')
