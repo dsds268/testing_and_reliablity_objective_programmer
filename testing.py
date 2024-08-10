@@ -1,17 +1,15 @@
 
-print('Is the value of A Known? (0/1): ')
+print('Is the value of A Known? T/F: ')
 AKnown = bool(input())
 
 if AKnown:
-    print('Enter Input 1 (A): ')
-    A = int(input())
+    A = int(input('Enter Input 1 (A): '))
 
-    print('Is the value of B Known? (0/1): ')
-    BKnown = bool(input())
+print('Is the value of B Known? T/F: ')
+BKnown = bool(input())
 
-    if BKnown:
-        print('Enter Input 2 (B): ')
-        B = int(input())
+if BKnown:
+    B = int(input('Enter Input 2 (B): '))
 
 valid_opr = ['+', '-', '*'] 
 
