@@ -1,16 +1,16 @@
-def boolean_input(input):
+def BooleanInput(input):
     return input.lower() in ['true', 't', 'yes', 'y']
 
 #Retrive the values of A if Known
 print('Is the value of A Known? (T/F): ')
-AKnown = boolean_input(input())
+AKnown = BooleanInput(input())
 
 if AKnown:
     A = int(input('Enter Input 1 (A): '))
 
 #Retrive the values of B if Known
 print('Is the value of B Known? (T/F): ')
-BKnown = boolean_input(input())
+BKnown = BooleanInput(input())
 
 if BKnown:
     B = int(input('Enter Input 2 (B): '))
@@ -25,8 +25,8 @@ if AKnown and BKnown:  #Calculation with both values known
                 result = eval(statement)
                 print(f"The following operators were used: {op1}, {op2}, {op3}: Producing: {result}")
 
-elif not (AKnown) or not (BKnown):
+elif AKnown or BKnown:
     print('Retriving all possible values of A so that the concrete test case can be generated')
 
-elif not (AKnown) and not (BKnown):
+else:
     print('You must have at least one value known to proceed')
