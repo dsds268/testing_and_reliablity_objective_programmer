@@ -1,8 +1,10 @@
-
+#Input A
 A = int(input('Enter Input 1 (A): '))
 
+#Input B
 B = int(input('Enter Input 2 (B): '))
 
+#All possible operators
 valid_opr = ['+', '-', '*'] 
 
 for op1 in valid_opr:
